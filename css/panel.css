@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  font-family: Helvetica;
+}
+
+#menu {
+  width: 300px;
+  height: auto;
+  border-right: 1px solid rgb(185, 185, 185);
+  padding: 10px;
+}
+#conteudo {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+li {
+  width: 100%;
+  height: auto;
+  font-size: 20px;
+  display: flex;
+  padding-bottom: 10px;
+}
+li:hover {
+  cursor: pointer;
+}
+li > span {
+  padding-right: 10px;
+}
+
+#secClientes {
+  display: none;
+  width: 400px;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.form input {
+  width: 100%;
+  height: 35px;
+  padding: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.form label {
+  font-size: 16px;
+}
+
+.headerSec {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.titulo1 {
+  text-decoration: underline;
+}
+.btnFechar {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footerSec {
+  display: flex;
+  justify-content: space-between;
+}
+.btnNavega {
+  border-radius: 6px;
+  border: none;
+  margin-right: 5px;
+  width: 50px;
+  height: auto;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: blueviolet;
+}
+.btnNovo {
+  border-radius: 6px;
+  border: none;
+  margin-right: 5px;
+  width: 80px;
+  height: auto;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(0, 102, 255);
+}
+
+.btnSalva {
+  border-radius: 6px;
+  border: none;
+  margin-right: 5px;
+  width: 80px;
+  height: auto;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(0, 128, 21);
+}
+
+#secProdutos {
+  display: none;
+  width: 400px;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+#secPedidos {
+  display: none;
+  width: 700px;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid black;
+}
+#formContainer {
+  padding: 5px;
+  background-color: rgb(175, 175, 175);
+  margin-bottom: 10px;
+}
+#formProPed {
+  display: flex;
+  justify-content: space-between;
+}
+#formProPed input {
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+#codigoProPed {
+  width: 50px;
+  height: 35px;
+}
+#produtoPed {
+  width: 250px;
+  height: 35px;
+}
+#precoPed {
+  width: 75px;
+  height: 35px;
+}
+#quantidadePed {
+  width: 75px;
+  height: 35px;
+}
+#lancarPed {
+  width: 180px;
+  font-size: 16px;
+}
+#tituloPed {
+  width: 100%;
+  color: rgb(57, 57, 187);
+  font-weight: bold;
+}
+tr {
+  display: flex;
+  width: 100%;
+  font-size: 16px;
+}
+.tbItem {
+  display: block;
+  width: 40px;
+  text-align: left;
+}
+.tbDesc {
+  display: block;
+  width: 300px;
+  text-align: left;
+}
+.tbPreco {
+  display: block;
+  width: 75px;
+  text-align: left;
+}
+.tbQtd {
+  display: block;
+  width: 75px;
+  text-align: left;
+}
+.tbSub {
+  display: block;
+  width: auto;
+  text-align: left;
+}
+
+#totalPedido {
+  display: flex;
+  justify-content: right;
+}
+
+#total {
+  display: flex;
+  justify-content: center;
+  color: red;
+  font-weight: bold;
+  width: auto;
+  padding: 5px;
+  height: auto;
+  background-color: rgb(170, 168, 168);
+}

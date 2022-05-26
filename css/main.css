@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login {
+  width: 300px;
+  height: auto;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+label {
+  display: block;
+  width: 100%;
+}
+
+input.txt {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  background-color: rgb(250, 239, 176);
+  border: 1px solid black;
+}
+
+input.btn {
+  width: 100%;
+  height: 40px;
+  margin-top: 15px;
+  
+  text-align: center;
+  background-color: rgb(19, 202, 235);
+  color: white;
+  font-size: 16px;
+}
+
+input.btn:hover{
+  cursor: pointer;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD
+@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD
+@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD
+@48,400,0,0" />
+    <link rel="stylesheet" href="css/panel.css" />
+    <script type='module' src="js/panel.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div id="menu">
+            <ul>
+                <li data-item='1'><span class="material-symbols-outlined"> group_add</span>Clientes</li>
+                <li data-item='2'><span class="material-symbols-outlined">redeem</span>Produtos</li>
+                <li data-item='3'><span class="material-symbols-outlined"> shopping_cart </span>Pedidos</li>
+            </ul>
+        </div>
+        <div id="conteudo">
+            <section id="secClientes">
+                <div class="headerSec">
+                    <h3 class="titulo1">Clientes</h3>
+                    <div data-btn='clientes' class="btnFechar">x</div>
+                </div>
+                <form class="form">
+                    <label for="codigoCli">Código</label>
+                    <input type="text" name="codigoCli" value="" id="codigoCli" disabled="true">
+                    <label for="nomeCli">Nome</label>
+                    <input type="text" name="nomeCli" value="" id="nomeCli">
+                    <label for="dataCLi">Data de cadastro</label>
+                    <input type="text" name="dataCli" value="" id="dataCli" disabled="true">
+                </form>
+                <div class="footerSec">
+                    <div class="btnEsquerda">
+                        <div><button id="anteriorCli" class="btnNavega">
+                            &lt</button><button id="proximoCli" class="btnNavega">&gt</button>
+                                    <dvi></dvi>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="btnDireita"><button id="novoCli" class="btnNovo">Novo</button><button id="salvaCli"
+                            class="btnSalva">Salvar</button></div>
+                </div>
+            </section>
+            <section id="secProdutos">
+                <div class="headerSec">
+                    <h3 class="titulo1">Produtos</h3>
+                    <div data-btn='produtos' class="btnFechar">x</div>
+                </div>
+                <form class="form">
+                    <label for="codigoPro">Código</label>
+                    <input type="text" name="codigoPro" value="" id="codigoPro" disabled="true">
+                    <label for="descricaoPro">Descrição</label>
+                    <input type="text" name="descricaoPro" value="" id="descricaoPro">
+                    <label for="precoPro">Preço</label>
+                    <input type="text" name="precoPro" value="" id="precoPro">
+                    <label for="quantidadePro">Quantidade</label>
+                    <input type="text" name="quantidadePro" value="" id="quantidadePro">
+                </form>
+                <div class="footerSec">
+                    <div class="btnEsquerda">
+                        <div><button id="anteriorPro" class="btnNavega">
+                            &lt</button><button id="proximoPro" class="btnNavega">&gt</button>
+                                    <dvi></dvi>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="btnDireita"><button id="novoPro" class="btnNovo">Novo</button><button id="salvaPro"
+                            class="btnSalva">Salvar</button></div>
+                </div>
+            </section>
+            <section id="secPedidos">
+                <div class="headerSec">
+                    <h3 class="titulo1">Pedidos</h3>
+                    <div data-btn='pedidos' class="btnFechar">x</div>
+                </div>
+                <form class="form">
+                    <label for="codigoCliPed">Código do cliente</label>
+                    <input type="text" name="codigoCliPed" value="" id="codigoCliPed">
+                    <label for="cliPed">Cliente</label>
+                    <input type="text" name="cliPed" value="" id="cliPed" disabled="true">
+                </form>
+                <hr>
+                <span id="tituloPed">
+                    <h3>Localizar Produto</h3>
+                </span>
+                <div id="formContainer">
+                    <form id="formProPed">
+                        <input type="text" name="codigoProPed" value="" id="codigoProPed">
+                        <input type="text" name="produtoPed" value="" id="produtoPed" disabled="true">
+                        <input type="text" name="precoPed" value="" id="precoPed" disabled="true">
+                        <input type="text" name="quantidadePed" value="" id="quantidadePed">
+                        <button type="button" id="lancarPed">Lançar no Pedido</button>
+                    </form>
+                </div>
+                <hr>
+                <span id="tituloPed">
+                    <h3>Itens do Pedido</h3>
+                </span>
+                <table id="tabelaPedido">
+                    <tbody>
+                        <thead>
+                            <th class="tbItem">Item</th>
+                            <th class="tbDesc">Descrição</th>
+                            <th class="tbPreco">Preço</th>
+                            <th class="tbQtd">Qtd</th>
+                            <th class="tbSub">Sub Total</th>
+                        </thead>
+                    </tbody>
+                </table>
+                <div id="totalPedido">
+                    <div id="total"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
